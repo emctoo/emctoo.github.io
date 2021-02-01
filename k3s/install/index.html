@@ -14,7 +14,7 @@
     
     
       
-        <title>Python hierchachy - TIL</title>
+        <title>Install - TIL</title>
       
     
     
@@ -58,7 +58,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#python-hierchachy" class="md-skip">
+        <a href="#server-installation" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Python hierchachy
+              Install
             
           </span>
         </div>
@@ -248,12 +248,14 @@
       
 
 
+  
+
 
   
-  <li class="md-nav__item md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
     
     <label class="md-nav__link" for="nav-5">
       K3s
@@ -272,11 +274,52 @@
           
 
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../k3s/install/" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Install
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
       Install
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#server-installation" class="md-nav__link">
+    server installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    卸载
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -358,14 +401,12 @@
       
 
 
-  
-
 
   
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" >
     
     <label class="md-nav__link" for="nav-7">
       Python
@@ -384,56 +425,11 @@
           
 
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Python hierchachy
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../python/import/" class="md-nav__link">
       Python hierchachy
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#package" class="md-nav__link">
-    package
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#module" class="md-nav__link">
-    module
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -444,7 +440,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../pip/" class="md-nav__link">
+    <a href="../../python/pip/" class="md-nav__link">
       Pip
     </a>
   </li>
@@ -512,8 +508,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -522,15 +516,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#package" class="md-nav__link">
-    package
+  <a href="#server-installation" class="md-nav__link">
+    server installation
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#module" class="md-nav__link">
-    module
+  <a href="#_1" class="md-nav__link">
+    卸载
   </a>
   
 </li>
@@ -548,12 +542,45 @@
               
                 
                 
-                <h1 id="python-hierchachy">Python hierchachy</h1>
-<h2 id="package">package</h2>
-<p>Normally a directory with an <strong>init</strong>.py file is a package.</p>
-<h2 id="module">module</h2>
-<p>One single file in Python is an module.</p>
-<h1 id="python-import-mechanism">Python import mechanism</h1>
+                  <h1>Install</h1>
+                
+                <h3 id="server-installation">server installation</h3>
+<p>air-gap install</p>
+<p>image file, example: (version <strong>1.20.2+k3s1</strong>)</p>
+<pre><code>https://github.com/k3s-io/k3s/releases/download/v1.20.2%2Bk3s1/k3s-airgap-images-amd64.tar
+</code></pre>
+<pre><code class="language-shell">sudo mkdir -p /var/lib/rancher/k3s/agent/images/
+sudo cp ./k3s-airgap-images-$ARCH.tar /var/lib/rancher/k3s/agent/images/
+</code></pre>
+<ul>
+<li>Place the k3s binary at <code>/usr/local/bin/k3s</code> and ensure it is executable</li>
+</ul>
+<pre><code class="language-shell">https://github.com/k3s-io/k3s/releases/download/v1.20.2%2Bk3s1/k3s
+</code></pre>
+<ul>
+<li>install script</li>
+</ul>
+<pre><code class="language-shell">wget https://get.k3s.io -O install.sh
+</code></pre>
+<ul>
+<li>install server node</li>
+</ul>
+<pre><code class="language-shell">INSTALL_K3S_SKIP_DOWNLOAD=true INSTALL_K3S_EXEC=&quot;--write-kubeconfig-mode 666 --tls-san 192.168.100.201 --node-external-ip=192.168.100.201&quot; ./install.sh
+# notice the external IP, from [1]
+</code></pre>
+<ul>
+<li>on the server node, get the token at <code>/var/lib/rancher/k3s/server/node-token</code></li>
+<li>install on worker node</li>
+</ul>
+<pre><code>INSTALL_K3S_SKIP_DOWNLOAD=true K3S_URL=https://192.168.100.201:6443 K3S_TOKEN=mynodetoken ./install.sh
+</code></pre>
+<h3 id="_1">卸载</h3>
+<p>server node  run</p>
+<pre><code class="language-shell">/usr/local/bin/k3s-uninstall.sh
+</code></pre>
+<p>worker node run</p>
+<pre><code class="language-shell">/usr/local/bin/k3s-agent-uninstall.sh
+</code></pre>
                 
               
               
@@ -572,7 +599,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../../k8s/kind/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../java/redisson-collections/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -581,19 +608,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Kind
+                Redisson collections
               </div>
             </div>
           </a>
         
         
-          <a href="../pip/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../k8s/docker/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Pip
+                Docker
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
