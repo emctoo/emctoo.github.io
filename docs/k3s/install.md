@@ -38,10 +38,41 @@ INSTALL_K3S_SKIP_DOWNLOAD=true INSTALL_K3S_EXEC="--write-kubeconfig-mode 666 --t
 - install on worker node
 
 ```
-INSTALL_K3S_SKIP_DOWNLOAD=true K3S_URL=https://192.168.100.201:6443 K3S_TOKEN=mynodetoken ./install.sh
+INSTALL_K3S_SKIP_DOWNLOAD=true K3S_URL=https://192.168.100.201:6443 K3S_TOKEN=token ./install.sh
+```
+
+#### server node
+
+```
+rm -rf $HOME/.kube
+
+mkdir -p $HOME/.kube
+sudo cp -i /etc/rancher/k3s/k3s.yaml $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```
 
 
+
+#### registry 问题
+
+https://rancher.com/docs/k3s/latest/en/installation/private-registry/
+
+k3s 默认使用containerd做cri，启动时候会去找 `/etc/rancher/k3s/registries.yaml`，根据mirrors字段生成containderd的配置。
+
+```yaml
+# /etc/rancher/k3s/registries.yaml
+mirrors:
+  "docker.io":
+    endpoint:
+      - "https://fhnbkhe7.mirror.aliyuncs.com"
+      - "https://registry-1.docker.io"
+```
+
+可以在 `/var/lib/rancher/k3s/agent/etc/containerd/config.toml` 下找到containerd相关的配置。
+
+问题：k3s 中containerd相关的配置在什么地方？
+
+另外的，关于如何使用私有镜像的教程： https://www.cnblogs.com/yaopengfei/p/13705822.html。注意的是，阿里云的私有镜像，在界面上要使用旧版的才能进行文中进行的操作。
 
 ### 卸载
 
@@ -57,3 +88,6 @@ worker node run
 /usr/local/bin/k3s-agent-uninstall.sh
 ```
 
+#### containerd
+
+#### runc

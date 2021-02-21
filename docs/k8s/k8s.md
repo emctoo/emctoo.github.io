@@ -17,3 +17,11 @@ kubectl config set-context --current --namespace=<insert-namespace-name-here>
 kubectl config view --minify | grep namespace:
 ```
 
+- kubectl 直接copy binary 就可以，默认配置文件 $HOME/.kube/config
+- kubectl api-resources 可以列出所有的资源列表
+
+- 
+
+### service
+
+static ip、load balance、service discovery
