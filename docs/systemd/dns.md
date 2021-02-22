@@ -21,3 +21,11 @@ We can specify a simple DNS server by using CoreDNS, which will forward the DNS 
 ./coredns
 ```
 
+#### drill
+
+有可能需要设置 `/etc/resolv.conf`
+
+```
+nameserver 119.29.29.29
+```
+

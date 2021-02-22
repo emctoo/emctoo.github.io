@@ -72,7 +72,9 @@ mirrors:
 
 问题：k3s 中containerd相关的配置在什么地方？
 
-另外的，关于如何使用私有镜像的教程： https://www.cnblogs.com/yaopengfei/p/13705822.html。注意的是，阿里云的私有镜像，在界面上要使用旧版的才能进行文中进行的操作。
+另外的，关于如何使用私有镜像的教程： https://www.cnblogs.com/yaopengfei/p/13705822.html。
+
+(注意的是，阿里云的私有镜像，在界面上要使用旧版的才能进行文中进行的操作。)
 
 ### 卸载
 
@@ -90,4 +92,20 @@ worker node run
 
 #### containerd
 
+[configure image registry](https://github.com/containerd/cri/blob/master/docs/registry.md)
+
+containerd 的默认配置在 `/etc/containerd/config.toml`（k3s的实现增加了抽象层）
+
+k3s 中 socket address: `/run/k3s/containerd.sock`
+
 #### runc
+
+
+
+#### aliyun container service
+
+需要RAM授权
+
+URL: https://cs.console.aliyun.com/
+
+基本的办法只能是把镜像做成是"公有类型"
