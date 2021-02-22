@@ -35,7 +35,6 @@ kubectl config view --minify | grep namespace
 - kubectl 直接copy binary 就可以，默认配置文件 $HOME/.kube/config
 - kubectl api-resources 可以列出所有的资源列表
 
-- 
 
 ### service
 
@@ -43,4 +42,6 @@ static ip、load balance、service discovery
 
 
 
-[K8S 私有镜像](https://kirakirazone.com/2020/08/06/k8s%E6%8B%89%E5%8F%96%E7%A7%81%E6%9C%89%E9%95%9C%E5%83%8F/) 引入的方式
+**[TODO]** [K8S 私有镜像](https://kirakirazone.com/2020/08/06/k8s%E6%8B%89%E5%8F%96%E7%A7%81%E6%9C%89%E9%95%9C%E5%83%8F/) 引入的方式
+
+kubectl run 可以直接运行pod `kubectl help run`
