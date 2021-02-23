@@ -1,4 +1,4 @@
-### namespace
+namespace
 
 同一个 cluster 下的命名空间，不同的project, team, or customers to share the same cluster.
 
@@ -37,7 +37,29 @@ kubectl config view --minify | grep namespace
 
 - 
 
-### service
+## service
+
+- #### motivation
+
+pods 是动态的管理的，为了让cluster达到一个状态，pods在创建和销毁
+
+deployment: define the targeting state of a cluster
+
+frontend pods => backend pods
+
+新建的pods 的 IP 是不一样的，pods是为了解决这个问题
+
+- #### service resources
+
+a logical set of pods (using <u>selector</u>) + a policy to access them
+
+
+
+expose deployment as service:
+
+```shell
+kubectl expose deployment hello --port 80
+```
 
 static ip、load balance、service discovery
 
