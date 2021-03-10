@@ -52,18 +52,29 @@ frontend pods => backend pods
 
 a logical set of pods (using <u>selector</u>) + a policy to access them
 
-
-
-expose deployment as service:
+- expose deployment as service:
 
 ```shell
 kubectl expose deployment hello --port 80
 ```
 
+- we could expose lots of resources (po, svc, rc, deploy, rs) as a service
+
+- selector
+
 static ip、load balance、service discovery
+
+NodePort service 在每个node上都打开一个端口来提供服务
 
 
 
 **[TODO]** [K8S 私有镜像](https://kirakirazone.com/2020/08/06/k8s%E6%8B%89%E5%8F%96%E7%A7%81%E6%9C%89%E9%95%9C%E5%83%8F/) 引入的方式
 
 kubectl run 可以直接运行pod `kubectl help run`
+
+
+
+context 是不同的cluster, kubectl 切换context时候是在管理不同的cluster (.kube/config中的不同配置)
+
+namespace 是一个cluster中的逻辑划分, resource quota
+

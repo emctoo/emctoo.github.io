@@ -18,3 +18,6 @@ pd.set_option('display.width', 1000)
 
 pandas 一些出人意料的地方，以及对性能有帮助的小tips。
 
+#### **[TODO]** [fast pandas](https://github.com/mm-mansour/Fast-Pandas)
+
+benchmark pandas

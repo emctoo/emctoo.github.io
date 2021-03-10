@@ -26,7 +26,7 @@ wireguard hub https://github.com/costela/wesher
 
 backoff 算法 https://github.com/cenkalti/backoff
 
-**wg SD https://www.jordanwhited.com/posts/wireguard-endpoint-discovery-nat-traversal/**  => wgsd
+**WG SD https://www.jordanwhited.com/posts/wireguard-endpoint-discovery-nat-traversal/**  => wgsd
 
 *matplotlib vs seaborn vs bokeh vs altair*
 
@@ -35,3 +35,15 @@ ES 优化 https://weread.qq.com/web/reader/f9c32dc07184876ef9cdeb6ka0a32dd027aa0
 working on 
 
 https://github.com/caicloud/kube-ladder/blob/master/tutorials/lab2-application-and-service.md
+
+[彻底解决 gcr、quay、DockerHub 镜像下载难题](https://segmentfault.com/a/1190000022627844)
+
+[OpenStack 介绍](https://www.jianshu.com/p/4c06dff6cea8)
+
+[cirros](https://github.com/cirros-dev/cirros) [dl](http://download.cirros-cloud.net/) 很小的Linux，方便测试 ([https://news.ycombinator.com/item?id=19736722](https://news.ycombinator.com/item?id=19736722): commands may be helpful for launch it in qemu)
+
+[AWS data warehouse 课程](https://aws.amazon.com/training/course-descriptions/data-warehousing/)
+
+[awesome scalability](https://github.com/binhnguyennus/awesome-scalability)
+
+[es search examples](https://juejin.cn/post/6844903890396135438), [intro](https://juejin.cn/post/6844903845613535245)

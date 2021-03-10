@@ -57,7 +57,7 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 https://rancher.com/docs/k3s/latest/en/installation/private-registry/
 
-k3s 默认使用containerd做cri，启动时候会去找 `/etc/rancher/k3s/registries.yaml`，根据mirrors字段生成containderd的配置。
+k3s 默认使用containerd做cri，启动时候会去找 `/etc/rancher/k3s/registries.yaml`，根据mirrors字段生成containerd的配置。
 
 ```yaml
 # /etc/rancher/k3s/registries.yaml
@@ -96,7 +96,7 @@ worker node run
 
 containerd 的默认配置在 `/etc/containerd/config.toml`（k3s的实现增加了抽象层）
 
-k3s 中 socket address: `/run/k3s/containerd.sock`
+k3s 中 socket address: `/run/k3s/containerd/containerd.sock`
 
 #### runc
 
@@ -109,3 +109,7 @@ k3s 中 socket address: `/run/k3s/containerd.sock`
 URL: https://cs.console.aliyun.com/
 
 基本的办法只能是把镜像做成是"公有类型"
+
+
+
+server node 上的 registries.yaml is not respected.
