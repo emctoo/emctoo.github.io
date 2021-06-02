@@ -1,18 +1,18 @@
-#### display all rows and columns
+#### display options
 
- pandas autodetects the size of your terminal window if you set 
+https://towardsdatascience.com/6-pandas-display-options-you-should-memories-84adf8887bc3
+
+pandas autodetects the size of your terminal window if you set 
 
 ```python
 pd.options.display.width = 0
 ```
 
 ```python
-pd.set_option('display.max_rows', 500)
+pd.set_option('display.max_rows', 2500)
 pd.set_option('display.max_columns', 1000)
 pd.set_option('display.width', 2000)
 ```
-
-
 
 #### [**TODO**] [just panda things](https://github.com/chiphuyen/just-pandas-things/blob/master/just-pandas-things.ipynb) 
 
