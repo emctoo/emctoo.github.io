@@ -17,6 +17,7 @@ sudo cp ./k3s-airgap-images-$ARCH.tar /var/lib/rancher/k3s/agent/images/
 
 ```shell
 https://github.com/k3s-io/k3s/releases/download/v1.20.2%2Bk3s1/k3s
+sudo cp k3s /usr/local/bin/
 ```
 
 - install script
@@ -35,10 +36,15 @@ INSTALL_K3S_SKIP_DOWNLOAD=true INSTALL_K3S_EXEC="--write-kubeconfig-mode 666 --t
 [1]: https://github.com/k3s-io/k3s/issues/1523	"unable to connect agent to master"
 
 - on the server node, get the token at `/var/lib/rancher/k3s/server/node-token`
+
+```shell
+sudo cat /var/lib/rancher/k3s/server/node-token
+```
+
 - install on worker node
 
 ```
-INSTALL_K3S_SKIP_DOWNLOAD=true K3S_URL=https://192.168.100.201:6443 K3S_TOKEN=token ./install.sh
+INSTALL_K3S_SKIP_DOWNLOAD=true K3S_URL=https://192.168.100.201:6443 K3S_TOKEN=$TOKEN ./install.sh
 ```
 
 #### server node
